@@ -32,7 +32,7 @@ class BinaryTree:
         self._subtreeSize(self.root):
 
     def _subtreeSize(self,p):
-        if p is None:
+        if p == None:
             return 0
         else:
             return 1+self._subtreeSize(p.left) + self._subtreeSize(p.right)
